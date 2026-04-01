@@ -1,5 +1,6 @@
 # docs
 
+- [团队晨间看板](../dashboard/README.md)
 - [开发日志](./dev-log.md)
 - [项目里程碑](./project-milestones.md)
 - [每日进展布告栏](./daily-status-board.md)

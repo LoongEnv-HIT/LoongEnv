@@ -41,3 +41,4 @@ git push -u origin main
 - 中枢仓首页 `今日主入口`
 - `dashboard/README.md`
 - `docs/daily-status-board.md`
+- `LoongEnv` Actions 中的 `DEPLOY_AI`

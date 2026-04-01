@@ -20,11 +20,12 @@
 - `repos/WANG_CZ`
 - `LoongEnv-ZHU_YH`
 
-## Agent Repos
+## AI Roles
 
-AI 成员仓建议使用统一命名：
+AI 成员统一挂在 `LoongEnv` 中枢仓的 GitHub Actions 下：
 
 - `DOCS_AI`
 - `SUPERVISOR_AI`
+- `DEPLOY_AI`
 
-AI 仓负责角色化辅助工作，并将共享结果同步回团队中枢仓。
+成员仓只保留各自项目的实现与发布流水线，不再承载 AI 成员入口。

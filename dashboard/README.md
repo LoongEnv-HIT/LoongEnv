@@ -15,6 +15,7 @@
 - [SUPERVISOR_AI](https://github.com/LoongEnv-HIT/SUPERVISOR_AI)
 - [运行 DOCS_AI](https://github.com/LoongEnv-HIT/LoongEnv/actions/workflows/docs-ai.yml)
 - [运行 SUPERVISOR_AI](https://github.com/LoongEnv-HIT/LoongEnv/actions/workflows/supervisor-ai.yml)
+- [运行 DEPLOY_AI](https://github.com/LoongEnv-HIT/LoongEnv/actions/workflows/deploy-ai.yml)
 
 ## Purpose
 

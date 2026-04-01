@@ -11,4 +11,4 @@
 
 ## 说明
 
-当前预览页面由成员仓 `LoongEnv-ZHU_YH` 中的 `DEPLOY_AI` 自动部署到 GitHub Pages。
+当前预览页面由组织中枢仓 `LoongEnv` 中的 `DEPLOY_AI` 统一调度，并由成员仓发布流水线部署到 GitHub Pages。

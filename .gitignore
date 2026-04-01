@@ -1,0 +1,9 @@
+.codex
+.codex/
+.DS_Store
+*.swp
+*.tmp
+repos/*/.git
+repos/ZHAO_SZ/
+repos/WANG_CZ/
+repos/ZHU_YH/

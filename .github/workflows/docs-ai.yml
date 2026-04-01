@@ -1,0 +1,34 @@
+name: DOCS_AI
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-dev-log:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+
+      - name: Generate development log
+        run: bash .github/scripts/docs_ai.sh
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- docs/dev-log.md; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/dev-log.md
+          git commit -m "DOCS_AI update development log"
+          git push

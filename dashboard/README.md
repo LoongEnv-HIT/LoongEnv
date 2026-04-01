@@ -9,8 +9,10 @@
 - [查看项目里程碑](../docs/project-milestones.md)
 - [ZHU_YH 仓设置与测试说明](../docs/zhu_yh-repo-setup-and-test.md)
 
-## AI Manual Run
+## AI成员入口
 
+- [DOCS_AI](https://github.com/LoongEnv-HIT/DOCS_AI)
+- [SUPERVISOR_AI](https://github.com/LoongEnv-HIT/SUPERVISOR_AI)
 - [运行 DOCS_AI](https://github.com/LoongEnv-HIT/LoongEnv/actions/workflows/docs-ai.yml)
 - [运行 SUPERVISOR_AI](https://github.com/LoongEnv-HIT/LoongEnv/actions/workflows/supervisor-ai.yml)
 

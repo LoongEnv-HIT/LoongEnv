@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OWNER: ${{ github.repository_owner }}
-      REPOS: ZHAO_SZ WANG_CZ ZHU_YH
+      REPOS: ZHAO_SZ|ZHAO_SZ WANG_CZ|WANG_CZ LoongEnv-ZHU_YH|ZHU_YH
       GITHUB_TOKEN: ${{ github.token }}
 
     steps:

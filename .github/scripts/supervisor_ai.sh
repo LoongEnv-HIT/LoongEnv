@@ -19,7 +19,13 @@ mkdir -p docs
   echo "## Today"
   echo
 
-  for repo in ${REPOS}; do
+  for entry in ${REPOS}; do
+    repo="${entry%%|*}"
+    label="${entry#*|}"
+    if [[ "${label}" == "${entry}" ]]; then
+      label="${repo}"
+    fi
+
     curl_args=(
       -fsSL
       -H "Accept: application/vnd.github+json"
@@ -32,13 +38,13 @@ mkdir -p docs
     response="$(curl "${curl_args[@]}" "${api_root}/${OWNER}/${repo}/commits?per_page=1" 2>/dev/null || true)"
 
     if [[ -z "${response}" ]] || [[ "$(printf '%s' "${response}" | jq -r 'type')" != "array" ]]; then
-      echo "- ${repo}: repository not available yet."
+      echo "- ${label}: repository not available yet."
       continue
     fi
 
     count="$(printf '%s' "${response}" | jq 'length')"
     if [[ "${count}" -eq 0 ]]; then
-      echo "- ${repo}: no commits found."
+      echo "- ${label}: no commits found."
       continue
     fi
 
@@ -46,7 +52,7 @@ mkdir -p docs
     latest_date="$(printf '%s' "${response}" | jq -r '.[0].commit.author.date' | cut -d'T' -f1)"
     latest_sha="$(printf '%s' "${response}" | jq -r '.[0].sha[0:7]')"
 
-    echo "- ${repo}: latest commit ${latest_sha} on ${latest_date} - ${latest_message}"
+    echo "- ${label}: latest commit ${latest_sha} on ${latest_date} - ${latest_message}"
   done
 
   echo

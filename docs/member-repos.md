@@ -6,7 +6,7 @@
 
 - `ZHAO_SZ`：赵世泽
 - `WANG_CZ`：王成志
-- `ZHU_YH`：朱延河
+- `ZHU_YH`：朱延河，对应远程仓 `LoongEnv-ZHU_YH`
 
 ## 作用
 

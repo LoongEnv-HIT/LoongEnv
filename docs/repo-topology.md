@@ -18,7 +18,7 @@
 
 - `repos/ZHAO_SZ`
 - `repos/WANG_CZ`
-- `repos/ZHU_YH`
+- `LoongEnv-ZHU_YH`
 
 ## Agent Repos
 

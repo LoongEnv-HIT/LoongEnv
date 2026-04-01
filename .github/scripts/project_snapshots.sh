@@ -113,7 +113,7 @@ for entry in ${MEMBER_REPOS}; do
     server_pid=$!
     sleep 3
 
-    if npx -y -p playwright@1.52.0 node .github/scripts/capture_screenshot.mjs "http://127.0.0.1:${port}" "$image_abs_path" >/dev/null 2>&1; then
+    if npx -y playwright@1.52.0 screenshot --device="Desktop Chrome" --full-page "http://127.0.0.1:${port}" "$image_abs_path" >/dev/null 2>&1; then
       {
         echo "### ${label} / ${project_name}"
         echo

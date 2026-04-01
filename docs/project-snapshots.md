@@ -1,9 +1,16 @@
 # 项目快照
 
 - 由 `DOCS_AI` 自动生成
-- 更新时间：2026-04-01 07:26 UTC
+- 更新时间：2026-04-01 08:33 UTC
 
 ## 前端项目快照
+
+### ZHU_YH / LoongEnv_IDE
+
+- 仓库：`LoongEnv-HIT/LoongEnv-ZHU_YH`
+- 项目路径：`LoongEnv_IDE`
+
+![ZHU_YH LoongEnv_IDE 主页快照](./project-snapshots/ZHU_YH-LoongEnv_IDE.png)
 
 ### ZHU_YH / Loongenv_Web
 
@@ -11,3 +18,4 @@
 - 项目路径：`Loongenv_Web`
 
 ![ZHU_YH Loongenv_Web 主页快照](./project-snapshots/ZHU_YH-Loongenv_Web.png)
+
